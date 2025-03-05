@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+strong {
+    color: #545E6A;
+}
+
+.deletConta {
+    background-color: rgb(236, 63, 63);
+    color: white;
+    border: 0;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.deletConta:hover {
+    background-color: rgb(230, 43, 43);
+    color: black;
+}
+
+.maisDados {
+    background-color: rgb(113, 169, 169);
+    color: white;
+    border: 0;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.maisDados:hover {
+    background-color: rgb(83, 210, 210);
+    color: rgb(0, 0, 0);
+}
+
+.voltar {
+    background-color: rgb(184, 190, 97);
+    color: white;
+    border: 0px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.voltar:hover {
+    background-color: rgb(213, 222, 86);
+    color: black;
+}
+
+div#formulario {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+input.inputNES {
+    background-color: #545E6A;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    width: 75%;
+    color: white;
+}
+
+label {
+    color: #545E6A;
+    font-weight: bold;
+    padding: 5px;
+}
+
+div#divSubmit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input#deletar {
+    background-color: rgb(236, 63, 63);
+    color: white;
+    border: 0;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    width: 30%;
+}
+
+input#deletar:hover {
+    background-color: rgb(230, 43, 43);
+    color: black;
+}
+
+section#conteudo {
+    margin: 10px;
+    background-color: #2E3138;
+    color: white;
+    border-radius: 10px;
+}
+
+section#conteudo > h3 {
+    padding: 10px;
+    text-align: center;
+}
+
+section#conteudo > ul {
+    padding: 10px;
+}
