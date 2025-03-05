@@ -4,4 +4,4 @@ EXPOSE 8080
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 RUN chmod -R 755 /var/www/html
 RUN chown -R www-data:www-data /var/www/html
-CMD ["apache2ctl", "-D", "FOREGROUND"]
+CMD ["sh", "-c", "sleep 10 && apache2ctl -D FOREGROUND"]
