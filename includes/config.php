@@ -1,3 +1,3 @@
 <?php
 
-define("UsuariosJson", __DIR__ . "/../storage/usuarios.json");
+define("UsuariosJson", $_SERVER['DOCUMENT_ROOT'] . "/storage/usuarios.json");
