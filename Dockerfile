@@ -18,9 +18,9 @@ RUN chown -R www-data:www-data /var/www/html
 RUN chmod -R 755 /var/www/html
 
 # Adicionar permissão correta ao Apache
-RUN echo "<Directory /var/www/html>
-    Require all granted
-</Directory>" >> /etc/apache2/apache2.conf
+RUN echo '<Directory "/var/www/html">\
+    Require all granted\
+</Directory>' >> /etc/apache2/apache2.conf
 
 # Comando para iniciar o Apache
 CMD ["apache2ctl", "-D", "FOREGROUND"]
