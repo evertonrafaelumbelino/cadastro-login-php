@@ -44,14 +44,18 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             ?>
 
             <link rel="stylesheet" href="../assets/css/cadastro-login.css">
+            <link rel="stylesheet" href="../assets/css/media-query.css">
             
             <?php 
-            echo "<h3>O nome " . "<strong>" . $_POST['nome'] . "</strong>" . " já está em uso, por favor volte ao formulário de cadastro e troque o seu nome de usuário.</h3>";
+            echo "
+            <main>
+                <h3>O nome " . "<strong>" . $_POST['nome'] . "</strong>" . " já está em uso, por favor volte ao formulário de cadastro e troque o seu nome de usuário.</h3>";
             
             echo '
-            <a href="../index.php">
-                <button type="button" class="voltar">Voltar a página inicial</button>
-            </a>';
+                <a href="../index.php">
+                    <button type="button" class="voltar">Voltar a página inicial</button>
+                </a>
+            </main>';
             exit;
         }
     }
@@ -66,7 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <link rel="stylesheet" href="../assets/css/cadastro-login.css">
 <link rel="stylesheet" href="../assets/css/media-query.css">
 
-<body>
+<main>
     <h1>Olá <strong><?php echo $nome;?></strong>, seja bem vindo(a) a sua nova conta!</h1>
     <h3>Abaixo estão todas as configurações que você pode fazer na sua conta:</h3>
     
@@ -85,23 +89,23 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <a href="../index.php">
         <button type="button" class="voltar">Voltar a página inicial</button>
     </a>
-    
-    <script src="../assets/js/cadastro-login.js"></script>
-    
-    <script>
-        let secConteudo = document.getElementById('conteudo');
-    
-        let maisDad = document.getElementById('maisDados')
-    
-        maisDad.addEventListener('click', () => {
-            secConteudo.innerHTML =
-            `
-            <h3>Abaixo estão todos os dados da sua conta:</h3>
-            <ul>
-                <li><strong>Nome:</strong> <?php echo $nome; ?> </li>
-                <li><strong>Email:</strong> <?php echo $email; ?></li>
-                <li><strong>Senha:</strong> <?php echo $senha; ?></li>
-            </ul>`;
-        })
-    </script>
-</body>
+</main>
+
+<script src="../assets/js/cadastro-login.js"></script>
+
+<script>
+    let secConteudo = document.getElementById('conteudo');
+
+    let maisDad = document.getElementById('maisDados')
+
+    maisDad.addEventListener('click', () => {
+        secConteudo.innerHTML =
+        `
+        <h3>Abaixo estão todos os dados da sua conta:</h3>
+        <ul>
+            <li><strong>Nome:</strong> <?php echo $nome; ?> </li>
+            <li><strong>Email:</strong> <?php echo $email; ?></li>
+            <li><strong>Senha:</strong> <?php echo $senha; ?></li>
+        </ul>`;
+    })
+</script>

@@ -1,7 +1,55 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 320px) {
     main {
-        width: 750px;
+        width: 75%;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+        text-align: justify;
+    }
+
+    .deletConta, .maisDados, .voltar {
+        font-size: 1.6rem;
+    }
+
+    input.inputNES {
+        font-size: 1rem;
+        width: 90%;
+    }
+
+    div#formulario > label {
+        font-size: 1.5rem;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    input.btnSubmit {
+        font-size: 1rem;
+        width: 40%;
+    }
+
+    input#deletar {
+        font-size: 1rem;
+        width: 40%;
+    }
+
+    strong {
+        font-size: 0.9rem;
+    }
+
+    h1 > strong  {
+        font-size: 1.5rem;
+    }
+
+    h2 > strong {
+        font-size: 1.5rem;
+    }
+
+    h3 > strong {
+        font-size: 1.5rem;
     }
 }

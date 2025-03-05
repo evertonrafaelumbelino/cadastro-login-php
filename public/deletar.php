@@ -35,11 +35,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <link rel="stylesheet" href="../assets/css/cadastro-login.css">
             <link rel="stylesheet" href="../assets/css/media-query.css">
 
-            <h2>Conta com o nome <strong> <?php echo $nome; ?> </strong> deletada com sucesso.</h2>
+            <main>
+                <h2>Conta com o nome <strong> <?php echo $nome; ?> </strong> deletada com sucesso.</h2>
 
-            <a href="../index.php">
-                <button type="button" class="voltar">Voltar a página inicial</button>
-            </a>
+                <a href="../index.php">
+                    <button type="button" class="voltar">Voltar a página inicial</button>
+                </a>
+            </main>
             <?php
             exit;
         }
@@ -48,11 +50,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="../assets/css/cadastro-login.css">
     <link rel="stylesheet" href="../assets/css/media-query.css">
 
-    <h3>Conta inválida ou não existente, verifique se digitou corretamente os dados da conta, ou se a conta realmente existe.</h3>
-    
-    <a href="../index.php">
-        <button type="button" class="voltar">Voltar a página inicial</button>
-    </a>
+    <main>
+        <h3>Conta inválida ou não existente, verifique se digitou corretamente os dados da conta, ou se a conta realmente existe.</h3>
+        
+        <a href="../index.php">
+            <button type="button" class="voltar">Voltar a página inicial</button>
+        </a>
+    </main>
     <?php
 }
 ?>
