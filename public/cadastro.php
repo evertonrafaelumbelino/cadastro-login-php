@@ -1,9 +1,9 @@
 <?php
 
-define("UsuariosJson", "/../storage/usuarios.json");
+require_once __DIR__ . "/../storage/storageConfig.php";
 
 function carregarUsuarios() {
-    return file_get_contents(UsuariosJson);
+    return file_get_contents(storageConfig);
 }
 
 function salvarUsuarios($novoUsuario) {
