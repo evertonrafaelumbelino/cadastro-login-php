@@ -1,6 +1,6 @@
 <?php
 
-define("UsuariosJson", __DIR__ . "/../storage/usuarios.json");
+define("UsuariosJson", "/../storage/usuarios.json");
 
 function carregarUsuarios() {
     return file_get_contents(UsuariosJson);
