@@ -49,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             echo "<h3>O nome " . "<strong>" . $_POST['nome'] . "</strong>" . " já está em uso, por favor volte ao formulário de cadastro e troque o seu nome de usuário.</h3>";
             
             echo '
-            <a href="../public/index.php">
+            <a href="../index.php">
                 <button type="button" class="voltar">Voltar a página inicial</button>
             </a>';
             exit;
@@ -82,7 +82,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     
     <h3>Voltar: </h3>
     
-    <a href="../public/index.php">
+    <a href="../index.php">
         <button type="button" class="voltar">Voltar a página inicial</button>
     </a>
     

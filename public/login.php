@@ -41,7 +41,7 @@
                         </section>
 
                         <h3>Voltar: </h3>
-                        <a href="../public/index.php">
+                        <a href="../index.php">
                             <button type="button" class="voltar">Voltar a página inicial</button>
                         </a>
                         <script src="../assets/js/cadastro-login.js"></script>
@@ -74,7 +74,7 @@
 
                 <h3>Dados de login inválidos, verifique se os dados foram digitados corretamente, ou se a conta realmente existe</h3>
 
-                <a href="../public/index.php">
+                <a href="../index.php">
                     <button type="button" class="voltar">Voltar a página inicial</button>
                 </a>
             <?php

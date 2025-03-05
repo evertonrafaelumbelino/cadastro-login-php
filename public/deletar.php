@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             <h2>Conta com o nome <strong> <?php echo $nome; ?> </strong> deletada com sucesso.</h2>
 
-            <a href="../public/index.php">
+            <a href="../index.php">
                 <button type="button" class="voltar">Voltar a página inicial</button>
             </a>
             <?php
@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <h3>Conta inválida ou não existente, verifique se digitou corretamente os dados da conta, ou se a conta realmente existe.</h3>
     
-    <a href="../public/index.php">
+    <a href="../index.php">
         <button type="button" class="voltar">Voltar a página inicial</button>
     </a>
     <?php

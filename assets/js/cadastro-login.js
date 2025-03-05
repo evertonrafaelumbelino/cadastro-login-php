@@ -7,7 +7,7 @@ deletarConta.addEventListener('click', () => {
     `
         <h3>Insira os dados da conta que deseja deletar:</h3>
 
-        <form action="deletar.php" method="POST">
+        <form action="/public/deletar.php" method="POST">
             <div id="formulario">
                 <label for="nome">Nome:</label>
                 <input type="text" name="nome" id="nome" class="inputNES" placeholder="Insira o nome da conta" required minlength="4" maxlength="20">

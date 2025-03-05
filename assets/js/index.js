@@ -11,7 +11,7 @@ btnCadastrar.addEventListener('click', () => {
     btnCadastrar.style.borderBottom = '2px solid white';
     divConteudo.innerHTML = 
     `
-        <form action="cadastro.php" method="POST">
+        <form action="/public/cadastro.php" method="POST">
             <div id="formulario">
                 <label for="nome">Nome:</label>
                 <input type="text" name="nome" id="nome" class="inputNES" placeholder="Nome com no mínimo 4 letras" required minlength="4" maxlength="20">
@@ -45,7 +45,7 @@ btnLogin.addEventListener('click', () => {
     btnLogin.style.borderBottom = '2px solid white';
     divConteudo.innerHTML = 
     `
-        <form action="login.php" method="POST">
+        <form action="/public/login.php" method="POST">
             <div id="formulario">
                 <label for="nome">Nome:</label>
                 <input type="text" name="nome" id="nome" class="inputNES" placeholder="Insira o nome da conta" required minlength="4" maxlength="20">

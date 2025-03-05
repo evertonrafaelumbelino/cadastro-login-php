@@ -6,8 +6,8 @@
     
     <title>Cadastro e Login</title>
 
-    <link rel="stylesheet" href="../assets/css/index.css">
-    <link rel="stylesheet" href="../assets/css/media-query.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/media-query.css">
 </head>
 <body>
     <main>
@@ -31,6 +31,6 @@
             
     </section>
 
-    <script src="../assets/js/index.js"></script>
+    <script src="/assets/js/index.js"></script>
 </body>
 </html>
