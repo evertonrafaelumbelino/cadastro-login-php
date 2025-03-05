@@ -1,9 +1,10 @@
 <?php
 
-require_once __DIR__ . "/../storage/storageConfig.php";
+require_once __DIR__ . "/../includes/config.php";
 
 function carregarUsuarios() {
-    return file_get_contents(storageConfig);
+    $caminho = __DIR__ . "/../storage/usuarios.json";
+    return file_get_contents($caminho);
 }
 
 function salvarUsuarios($novoUsuario) {
