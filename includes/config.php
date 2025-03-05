@@ -1,3 +1,3 @@
 <?php
 
-define("UsuariosJson", "/storage/usuarios.json");
+define("UsuariosJson", "/../storage/usuarios.json");

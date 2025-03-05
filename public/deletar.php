@@ -14,6 +14,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $usuarios = carregarUsuarios();
     $usuariosArray = json_decode($usuarios, true);
 
+    if (!is_array($usuariosArray)) {
+        $usuariosArray = [];
+    }
+
     foreach ($usuariosArray as $dados) {
         if (
             $dados['nome'] === $nome && 
