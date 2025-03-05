@@ -14,4 +14,9 @@ RUN chown -R www-data:www-data /var/www/html
 RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 755 /var/www/html
 
+RUN echo "<Directory /var/www/html>
+    Require all granted
+</Directory>" > /etc/apache2/conf-available/permissions.conf \
+    && a2enconf permissions
+
 CMD ["apache2ctl", "-D", "FOREGROUND"]
