@@ -3,8 +3,7 @@
 require_once __DIR__ . "/../includes/config.php";
 
 function carregarUsuarios() {
-    $caminho = __DIR__ . "/../storage/usuarios.json";
-    return file_get_contents($caminho);
+    return file_get_contents(UsuariosJson);
 }
 
 function salvarUsuarios($novoUsuario) {
